@@ -1,0 +1,1242 @@
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"BEG": {
+		"prefix": "BEG",
+	 	"body": [
+			 "\\begin{$1}",
+			 "\t$2",
+			 "\\end{$1}"
+		 ],
+		"description": "begin-end an env"
+	},
+
+	"eq": {
+		"prefix": "eq",
+	 	"body": [
+			 "\\begin{equation}",
+			 "\t$1",
+			 "\\end{$equation}"
+		 ],
+		"description": "begin-end an numbered equation"
+	},
+
+	"itmz": {
+		"prefix": "itmz",
+		"body": [
+			 "\\begin{itemize}",
+			 "\\item $1",
+			 "\\end{itemize}"
+		],
+		"description": "bullet points"
+	},
+
+	";la": {
+		"prefix": ";la",
+	 	"body": [
+	 		"\\langle"
+		],
+		"description": "left angle"
+	},
+
+	";no": {
+		"prefix": ";no",
+	 	"body": [
+	 		"\\{$1\\\\}"
+		],
+		"description": "normal ordering"
+	},
+
+	"dag": {
+		"prefix": "dag",
+	 	"body": [
+	 		"\\hat{$1}^{\\dagger}"
+		],
+		"description": "creation operator"
+	},
+
+	";ra": {
+		"prefix": ";ra",
+	 	"body": [
+	 		"\\rangle"
+		],
+		"description": "right angle"
+	},
+
+	"numlis": {
+		"prefix": "numlis",
+		"body": [
+			 "\\begin{enumerate}",
+			 "\\item $1",
+			 "\\end{enumerate}"
+		],
+		"description": "numbered list"
+	},
+
+	"mm": {
+		"prefix": "mm",
+	 	"body": [
+	 		"$${1}$ "
+		],
+		"description": "inline math"
+	},
+
+	"mm-": {
+		"prefix": "mm-",
+	 	"body": [
+	 		"$${1}$-"
+		],
+		"description": "inline math"
+	},
+
+	"bm": {
+		"prefix": "bm",
+	 	"body": [
+	 		"\\bm{$1}"
+		],
+		"description": "bold math"
+	},
+
+	"bf": {
+		"prefix": "bf",
+	 	"body": [
+	 		"\\mathbf{$1}"
+		],
+		"description": "bold upright math"
+	},
+
+	"at": {
+		"prefix": "at",
+	 	"body": [
+	 		"\\Big|_{{$1}}"
+		],
+		"description": "derivative evaluated at"
+	},
+
+	"rm": {
+		"prefix": "rm",
+	 	"body": [
+	 		"\\mathrm{$1}"
+		],
+		"description": "text in math"
+	},
+
+	"ml": {
+		"prefix": "ml",
+	 	"body": [
+			 "\\[",
+			 "\t$1",
+			 "\\]",
+			 ""
+		],
+		"description": "display math"
+	},
+
+	"mml": {
+		"prefix": "mml",
+	 	"body": [
+			"\\begin{align}",
+			"\t$1",
+			"\\end{align}"
+		],
+		"description": "display math multiline"
+	},
+
+	"-sr": {
+		"prefix": "-sr",
+	 	"body": [
+	 		"^2"
+		],
+		"description": "square"
+	},
+
+	"sq": {
+		"prefix": "sq",
+	 	"body": [
+	 		"\\sqrt{$1}"
+		],
+		"description": "square root"
+	},
+
+	"half": {
+		"prefix": "half",
+	 	"body": [
+	 		"\\frac{1}{2}"
+		],
+		"description": "half"
+	},
+
+	"reci": {
+		"prefix": "reci",
+	 	"body": [
+	 		"\\frac{1}{$1}"
+		],
+		"description": "reciprocal"
+	},
+
+	"hat": {
+		"prefix": "hat",
+	 	"body": [
+	 		"\\hat{$1}"
+		],
+		"description": "hat"
+	},
+
+	"bar": {
+		"prefix": "bar",
+	 	"body": [
+	 		"\\bar{$1}"
+		],
+		"description": "bar"
+	},
+
+	"vb": {
+		"prefix": "vb",
+	 	"body": [
+	 		"\\vb{$1}"
+		],
+		"description": "vector"
+	},
+
+	"tilde": {
+		"prefix": "tilde",
+	 	"body": [
+	 		"\\tilde{$1}"
+		],
+		"description": "tilde"
+	},
+
+	"kb": {
+		"prefix": "kb",
+	 	"body": [
+	 		"k_{B}"
+		],
+		"description": "boltzmann constant"
+	},
+
+	"der": {
+		"prefix": "der",
+	 	"body": [
+	 		"\\partial"
+		],
+		"description": "partial derivative sign"
+	},
+
+	"del": {
+		"prefix": "del",
+	 	"body": [
+	 		"\\nabla"
+		],
+		"description": "nabla sign"
+	},
+
+	"dd": {
+		"prefix": "dd",
+	 	"body": [
+	 		"\\dd{$1}"
+		],
+		"description": "differential"
+	},
+
+	"ddh": {
+		"prefix": "ddh",
+	 	"body": [
+	 		"\\dd[$2]{$1}"
+		],
+		"description": "higher differential"
+	},
+
+	";MM": {
+		"prefix": ";MM",
+	 	"body": [
+	 		"\\mathcal{M}"
+		],
+		"description": "manifold"
+	},
+
+	"HH": {
+		"prefix": "HH",
+	 	"body": [
+	 		"\\bar{H}"
+		],
+		"description": "effective Hamiltonian"
+	},
+
+
+	";VV": {
+		"prefix": ";VV",
+	 	"body": [
+	 		"\\mathcal{V}"
+		],
+		"description": "potential"
+	},
+
+	";WWW": {
+		"prefix": ";WWW",
+	 	"body": [
+	 		"\\mathscr{W}"
+		],
+		"description": "2 body intermediate"
+	},
+
+	";HH": {
+		"prefix": ";HH",
+	 	"body": [
+	 		"\\mathcal{H}"
+		],
+		"description": "Similarity-transformed Hamiltonian"
+	},
+
+	";FFF": {
+		"prefix": ";FFF",
+	 	"body": [
+	 		"\\mathscr{F}"
+		],
+		"description": "1 body intermediate"
+	},
+
+	";GG": {
+		"prefix": ";GG",
+	 	"body": [
+	 		"\\mathcal{G}"
+		],
+		"description": "Gibbs free energy"
+	},
+
+	";FF": {
+		"prefix": ";FF",
+	 	"body": [
+	 		"\\mathcal{F}"
+		],
+		"description": "Helmhotz free energy"
+	},
+
+	";KK": {
+		"prefix": ";KK",
+	 	"body": [
+	 		"\\mathcal{K}"
+		],
+		"description": "kinetic energy"
+	},
+
+	";RR": {
+		"prefix": ";RR",
+	 	"body": [
+	 		"\\mathbb{R}"
+		],
+		"description": "real numbers"
+	},
+
+	"-in": {
+		"prefix": "-in",
+	 	"body": [
+	 		"\\indices{$1}"
+		],
+		"description": "tensor index"
+	},
+
+	"tx": {
+		"prefix": "tx",
+	 	"body": [
+	 		"\\text{$1}"
+		],
+		"description": "math text"
+	},
+
+	";LL": {
+		"prefix": ";LL",
+	 	"body": [
+	 		"\\mathcal{L}"
+		],
+		"description": "Lagrangian"
+	},
+
+	";SS": {
+		"prefix": ";SS",
+	 	"body": [
+	 		"\\mathcal{S}"
+		],
+		"description": "action"
+	},
+
+	";es": {
+		"prefix": ";es",
+	 	"body": [
+	 		"\\varnothing"
+		],
+		"description": "empty set"
+	},
+
+	";OO": {
+		"prefix": ";OO",
+	 	"body": [
+	 		"\\mathcal{O}"
+		],
+		"description": "order"
+	},
+
+	";ii": {
+		"prefix": ";ii",
+	 	"body": [
+	 		"\\mathrm{i}"
+		],
+		"description": "imaginary"
+	},
+
+	"Rq": {
+		"prefix": "Rq",
+	 	"body": [
+	 		"\\Rightarrow\\qquad"
+		],
+		"description": "Rightarrow qquad"
+	},
+
+	"dl": {
+		"prefix": "dl",
+	 	"body": [
+	 		"&"
+		],
+		"description": "delim"
+	},
+
+	"abs": {
+		"prefix": "abs",
+	 	"body": [
+	 		"\\abs{$1}"
+		],
+		"description": "absolute value"
+	},
+
+	"dv": {
+		"prefix": "dv",
+	 	"body": [
+	 		"\\dv{$1}{$2}"
+		],
+		"description": "derivative"
+	},
+
+	"dvf": {
+		"prefix": "dvf",
+	 	"body": [
+	 		"\\dv*{$1}{$2}"
+		],
+		"description": "flat derivative"
+	},
+
+	"dvs": {
+		"prefix": "dvs",
+	 	"body": [
+	 		"\\dv{$1}"
+		],
+		"description": "d by d"
+	},
+
+	"dvsf": {
+		"prefix": "dvsf",
+	 	"body": [
+	 		"\\dv*{$1}"
+		],
+		"description": "flat d by d"
+	},
+
+	"dvh": {
+		"prefix": "dvh",
+	 	"body": [
+	 		"\\dv[$1]{$2}{$3}"
+		],
+		"description": "higher derivative"
+	},
+
+	"dvhf": {
+		"prefix": "dvhf",
+	 	"body": [
+	 		"\\dv*[$1]{$2}{$3}"
+		],
+		"description": "flat higher derivative"
+	},
+
+	"dvhs": {
+		"prefix": "dvhs",
+	 	"body": [
+	 		"\\dv[$1]{$2}"
+		],
+		"description": "higher d by d"
+	},
+
+	"dvhsf": {
+		"prefix": "dvhsf",
+	 	"body": [
+	 		"\\dv*[$1]{$2}"
+		],
+		"description": "flat higher d by d"
+	},
+
+	"pd": {
+		"prefix": "pd",
+	 	"body": [
+	 		"\\pdv{$1}{$2}"
+		],
+		"description": "partial derivative"
+	},
+
+	"pdvf": {
+		"prefix": "pdvf",
+	 	"body": [
+	 		"\\pdv*{$1}{$2}"
+		],
+		"description": "flat partial derivative"
+	},
+
+	"pdvs": {
+		"prefix": "pdvs",
+	 	"body": [
+	 		"\\pdv{$1}"
+		],
+		"description": "der by der"
+	},
+
+	"pdvsf": {
+		"prefix": "pdvsf",
+	 	"body": [
+	 		"\\pdv*{$1}"
+		],
+		"description": "flat der by der"
+	},
+
+	"pdvh": {
+		"prefix": "pdvh",
+	 	"body": [
+	 		"\\pdv[$1]{$2}{$3}"
+		],
+		"description": "higher partial derivative"
+	},
+
+	"pdvhf": {
+		"prefix": "pdvhf",
+	 	"body": [
+	 		"\\pdv*[$1]{$2}{$3}"
+		],
+		"description": "flat higher partial derivative"
+	},
+
+	"pdvhs": {
+		"prefix": "pdvhs",
+	 	"body": [
+	 		"\\pdv[$1]{$2}"
+		],
+		"description": "higher der by der"
+	},
+
+	"pdvhsf": {
+		"prefix": "pdvhsf",
+	 	"body": [
+	 		"\\pdv*[$1]{$2}"
+		],
+		"description": "flat higher der by der"
+	},
+
+	"Dv": {
+		"prefix": "Dv",
+	 	"body": [
+	 		"\\Dv{$1}{$2}"
+		],
+		"description": "convective derivative"
+	},
+
+	"Dvs": {
+		"prefix": "Dvs",
+	 	"body": [
+	 		"\\Dvv{$1}"
+		],
+		"description": "convective D by D"
+	},
+
+	"grad": {
+		"prefix": "grad",
+	 	"body": [
+	 		"\\grad"
+		],
+		"description": "gradient"
+	},
+
+	"div": {
+		"prefix": "div",
+	 	"body": [
+	 		"\\div"
+		],
+		"description": "divergence"
+	},
+
+	"curl": {
+		"prefix": "curl",
+	 	"body": [
+	 		"\\curl"
+		],
+		"description": "curl"
+	},
+
+	"vd": {
+		"prefix": "vd",
+	 	"body": [
+	 		"\\vdot"
+		],
+		"description": "vector dot"
+	},
+
+	"prop": {
+		"prefix": "prop",
+	 	"body": [
+	 		"\\propto"
+		],
+		"description": "proportional to"
+	},
+
+	"appr": {
+		"prefix": "appr",
+	 	"body": [
+	 		"\\approx"
+		],
+		"description": "approximately"
+	},
+
+	"ub": {
+		"prefix": "ub",
+	 	"body": [
+	 		"\\underbrace{$1}_{$2}"
+		],
+		"description": "underbrace"
+	},
+
+	"subs": {
+		"prefix": "substack",
+	 	"body": [
+	 		"\\substack{$1}"
+		],
+		"description": "substack"
+	},
+
+	"qq": {
+		"prefix": "qq",
+	 	"body": [
+	 		"\\qquad"
+		],
+		"description": "qquad"
+	},
+
+	"qu": {
+		"prefix": "qu",
+	 	"body": [
+	 		"\\quad"
+		],
+		"description": "quad"
+	},
+
+	"FIG": {
+		"prefix": "FIG",
+	 	"body": [
+			 "\\begin{figure}[H]",
+			 "\t\\centering",
+			 "\t\\includegraphics[width=$2\\linewidth]{fig/${1:default}}",
+			 "\\end{figure}"
+		],
+		"description": "Figure"
+	},
+
+	"FIC": {
+		"prefix": "FIC",
+	 	"body": [
+			 "\\begin{figure}[H]",
+			 "\t\\centering",
+			 "\t\\includegraphics[width=$2\\linewidth]{fig/${1:default}}",
+			 "\t\\caption{$3}$4",
+			 "\\end{figure}"
+		],
+		"description": "Figure"
+	},
+
+	"di": {
+		"prefix": "di",
+	 	"body": [
+	 		"\\int_{$1}^{$2}"
+		],
+		"description": "definite integral"
+	},
+
+	"-eval": {
+		"prefix": "-eval",
+	 	"body": [
+	 		"\\bigg|_{$1}"
+		],
+		"description": "evaluate at"
+	},
+
+	"-evalh": {
+		"prefix": "-evalh",
+	 	"body": [
+	 		"\\bigg|_{$1}^{$2}"
+		],
+		"description": "evaluate from to"
+	},
+
+	"dot": {
+		"prefix": "dot",
+	 	"body": [
+	 		"\\dot{$1}"
+		],
+		"description": "dot above"
+	},
+
+	"ddot": {
+		"prefix": "ddot",
+	 	"body": [
+	 		"\\ddot{$1}"
+		],
+		"description": "ddot above"
+	},
+
+	"ket": {
+		"prefix": "ket",
+	 	"body": [
+	 		"\\ket{$1}"
+		],
+		"description": "ket"
+	},
+
+	"bra": {
+		"prefix": "bra",
+	 	"body": [
+	 		"\\bra{$1}"
+		],
+		"description": "bra"
+	},
+
+	"bk": {
+		"prefix": "bk",
+	 	"body": [
+	 		"\\braket{$1}{$2}"
+		],
+		"description": "braket"
+	},
+
+	"mel": {
+		"prefix": "mel",
+	 	"body": [
+	 		"\\mel{$1}{$2}{$3}"
+		],
+		"description": "matrix element"
+	},
+
+	"exv": {
+		"prefix": "exv",
+	 	"body": [
+	 		"\\expval{$1}"
+		],
+		"description": "expectation value"
+	},
+
+	"cncl": {
+		"prefix": "cncl",
+	 	"body": [
+	 		"\\cancel{$1}"
+		],
+		"description": "cancel"
+	},
+
+	"cnclto": {
+		"prefix": "cnclto",
+	 	"body": [
+	 		"\\cancelto{\\text{\\tiny $1}}{$2}"
+		],
+		"description": "cancel to"
+	},
+
+	"LT": {
+		"prefix": "LT",
+	 	"body": [
+	 		"\\LT{$1}{$2}"
+		],
+		"description": "Lorentz transformation"
+	},
+
+	"iLT": {
+		"prefix": "iLT",
+	 	"body": [
+	 		"\\iLT{$1}{$2}"
+		],
+		"description": "inverse Lorentz transformation"
+	},
+
+	"conn": {
+		"prefix": "conn",
+	 	"body": [
+	 		"\\conn{$1}{$2}{$3}"
+		],
+		"description": "connection"
+	},
+	
+	"MFK": {
+		"prefix": "MFK",
+	 	"body": [
+	 		"\\mathfrak{$1}"
+		],
+		"description": "Math fraktur"
+	},
+	"-iv": {
+		"prefix": "-iv",
+	 	"body": [
+	 		"^{-1}"
+		],
+		"description": "Inverse"
+	},
+
+	"clr": {
+		"prefix": "clr",
+	 	"body": [
+	 		"{\\color{$1}$2}"
+		],
+		"description": "Colour"
+	},
+
+	"-du": {
+		"prefix": "-du",
+	 	"body": [
+	 		"^{\\vee}"
+		],
+		"description": "Dual used in DiffGeo"
+	},
+
+	"ga": {
+		"prefix": "ga",
+	 	"body": [
+	 		"\\alpha"
+		],
+		"description": "alpha"
+	},
+
+	"gb": {
+		"prefix": "gb",
+	 	"body": [
+	 		"\\beta"
+		],
+		"description": "beta"
+	},
+	
+	"gc": {
+		"prefix": "gc",
+	 	"body": [
+	 		"\\chi"
+		],
+		"description": "chi"
+	},
+
+	"gd": {
+		"prefix": "gd",
+	 	"body": [
+	 		"\\delta"
+		],
+		"description": "delta"
+	},
+
+	"ge": {
+		"prefix": "ge",
+	 	"body": [
+	 		"\\varepsilon"
+		],
+		"description": "epsilon"
+	},
+
+	"gf": {
+		"prefix": "gf",
+	 	"body": [
+	 		"\\phi"
+		],
+		"description": "phi"
+	},
+
+	"gg": {
+		"prefix": "gg",
+	 	"body": [
+	 		"\\gamma"
+		],
+		"description": "gamma"
+	},
+
+	"gh": {
+		"prefix": "gh",
+	 	"body": [
+	 		"\\eta"
+		],
+		"description": "eta"
+	},
+
+	"gi": {
+		"prefix": "gi",
+	 	"body": [
+	 		"\\iota"
+		],
+		"description": "iota"
+	},
+
+	"gk": {
+		"prefix": "gk",
+	 	"body": [
+	 		"\\kappa"
+		],
+		"description": "kappa"
+	},
+
+	"gl": {
+		"prefix": "gl",
+	 	"body": [
+	 		"\\lambda"
+		],
+		"description": "lambda"
+	},
+
+	"gm": {
+		"prefix": "gm",
+	 	"body": [
+	 		"\\mu"
+		],
+		"description": "mu"
+	},
+
+	"gn": {
+		"prefix": "gn",
+	 	"body": [
+	 		"\\nu"
+		],
+		"description": "nu"
+	},
+
+	"go": {
+		"prefix": "go",
+	 	"body": [
+	 		"\\omega"
+		],
+		"description": "omega"
+	},
+
+	"gp": {
+		"prefix": "gp",
+	 	"body": [
+	 		"\\pi"
+		],
+		"description": "pi"
+	},
+
+	"gq": {
+		"prefix": "gq",
+	 	"body": [
+	 		"\\theta"
+		],
+		"description": "theta"
+	},
+
+	"gr": {
+		"prefix": "gr",
+	 	"body": [
+	 		"\\rho"
+		],
+		"description": "rho"
+	},
+
+	"gs": {
+		"prefix": "gs",
+	 	"body": [
+	 		"\\sigma"
+		],
+		"description": "sigma"
+	},
+
+	"gt": {
+		"prefix": "gt",
+	 	"body": [
+	 		"\\tau"
+		],
+		"description": "tau"
+	},
+
+	"gu": {
+		"prefix": "gu",
+	 	"body": [
+	 		"\\upsilon"
+		],
+		"description": "upsilon"
+	},
+
+	"gx": {
+		"prefix": "gx",
+	 	"body": [
+	 		"\\xi"
+		],
+		"description": "xi"
+	},
+
+	"gy": {
+		"prefix": "gy",
+	 	"body": [
+	 		"\\psi"
+		],
+		"description": "psi"
+	},
+
+	"gz": {
+		"prefix": "gz",
+	 	"body": [
+	 		"\\zeta"
+		],
+		"description": "zeta"
+	},
+
+	"gD": {
+		"prefix": "gD",
+	 	"body": [
+	 		"\\Delta"
+		],
+		"description": "Delta"
+	},
+
+	"gF": {
+		"prefix": "gF",
+	 	"body": [
+	 		"\\Phi"
+		],
+		"description": "Phi"
+	},
+
+	"gG": {
+		"prefix": "gG",
+	 	"body": [
+	 		"\\Gamma"
+		],
+		"description": "Gamma"
+	},
+
+	"gL": {
+		"prefix": "gL",
+	 	"body": [
+	 		"\\Lambda"
+		],
+		"description": "Lambda"
+	},
+
+	"gO": {
+		"prefix": "gO",
+	 	"body": [
+	 		"\\Omega"
+		],
+		"description": "Omega"
+	},
+
+	"gP": {
+		"prefix": "gP",
+	 	"body": [
+	 		"\\Pi"
+		],
+		"description": "Pi"
+	},
+
+	"gQ": {
+		"prefix": "gQ",
+	 	"body": [
+	 		"\\Theta"
+		],
+		"description": "Thetq"
+	},
+
+	"gS": {
+		"prefix": "gS",
+	 	"body": [
+	 		"\\Sigma"
+		],
+		"description": "Sigma"
+	},
+
+	"gU": {
+		"prefix": "gU",
+	 	"body": [
+	 		"\\Upsilon"
+		],
+		"description": ""
+	},
+
+	"gX": {
+		"prefix": "gX",
+	 	"body": [
+	 		"\\Xi"
+		],
+		"description": "Xi"
+	},
+
+	"gY": {
+		"prefix": "gY",
+	 	"body": [
+	 		"\\Psi"
+		],
+		"description": "Psi"
+	},
+
+	"gve": {
+		"prefix": "gve",
+	 	"body": [
+	 		"\\varepsilon"
+		],
+		"description": "varepsilon"
+	},
+
+	"gvf": {
+		"prefix": "gvf",
+	 	"body": [
+	 		"\\varphi"
+		],
+		"description": "varphi"
+	},
+
+	"gvs": {
+		"prefix": "gvs",
+	 	"body": [
+	 		"\\varsigma"
+		],
+		"description": "varsigma"
+	},
+
+	"gvq": {
+		"prefix": "gvq",
+	 	"body": [
+	 		"\\vartheta"
+		],
+		"description": "vartheta"
+	},
+
+	"dn": {
+		"prefix": "dn",
+	 	"body": [
+	 		"_{$1}"
+		],
+		"description": "subscript"
+	},
+
+	"dnt": {
+		"prefix": "dnt",
+	 	"body": [
+	 		"_{\\text{$1}}"
+		],
+		"description": "subscript"
+	},
+
+	"up": {
+		"prefix": "up",
+	 	"body": [
+	 		"^{$1}"
+		],
+		"description": "superscript"
+	},
+
+	"fk": {
+		"prefix": "fk",
+	 	"body": [
+	 		"\\frac{$1}{$2}"
+		],
+		"description": "fraction"
+	},
+
+	"-dg": {
+		"prefix": "-dg",
+	 	"body": [
+	 		"^{\\dagger}"
+		],
+		"description": "Hermitian conjugate"
+	},
+
+	"sum": {
+		"prefix": "sum",
+		"body": [
+			"\\sum_{$1}"
+		],
+		"description": "summation with index"
+	},
+
+	"aa": {
+		"prefix": "aa",
+	 	"body": [
+	 		"\\alpha"
+		],
+		"description": "greek symbol alpha"
+	},
+
+	"wick":{
+		"prefix": "wick",
+		"body": [
+			"\\wick[sep=0.35em]{$1}"
+		],
+		"description": "general wick"
+	},
+
+	"wick1": {
+		"prefix": "wick1",
+	 	"body": [
+	 		"\\wick[sep=0.35em]{\\c1{$1}\\c1{$2}}"
+		],
+		"description": "one contraction wick"
+	},
+	
+	"wick2": {
+		"prefix": "wick2",
+	 	"body": [
+	 		"\\wick[sep=0.35em]{\\c2{$1}\\c1{$2}\\c$3{$4}\\c$5{$6}}"
+		],
+		"description": "two contraction wick"
+	},
+
+	"c1": {
+		"prefix": "wick-c1",
+		"body": [
+			"\\c1{$1}$2"
+		],
+		"description": "wick label 1 "
+	},
+	
+	"c2": {
+		"prefix": "wick-c2",
+		"body": [
+			"\\c2{$1}$2"
+		],
+		"description": "wick label 2 "
+	},
+
+	"c3": {
+		"prefix": "wick-c3",
+		"body": [
+			"\\c3{$1}$2"
+		],
+		"description": "wick label 3 "
+	},
+
+	"c4": {
+		"prefix": "wick-c4",
+		"body": [
+			"\\c4{$1}$2"
+		],
+		"description": "wick label 4 "
+	},
+
+	"vev":{
+		 "prefix": "vacuum expectation value",
+		 "body":[
+			 "\\langle 0|$1|0 \\rangle$2"
+		 ],
+		 "description": "vacuum expectation value"
+	},
+}
