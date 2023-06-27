@@ -84,6 +84,46 @@
 		"description": "numbered list"
 	},
 
+	"bb(": {
+		"prefix": "bb(",
+	 	"body": [
+	 		"\\Big($1\\Big)"
+		],
+		"description": "big round brackets"
+	},
+
+	"bb{": {
+		"prefix": "bb{",
+	 	"body": [
+	 		"\\Big\\{$1\\Big\\\\}"
+		],
+		"description": "big curly brackets"
+	},
+
+	"lr(": {
+		"prefix": "lr(",
+	 	"body": [
+	 		"\\left($1\\right)"
+		],
+		"description": "round brackets"
+	},
+
+	"lr[": {
+		"prefix": "lr[",
+	 	"body": [
+	 		"\\left[$1\\right]"
+		],
+		"description": "square brackets"
+	},
+
+	"lr{": {
+		"prefix": "lr{",
+	 	"body": [
+	 		"\\left\\{$1\\right\\\\}"
+		],
+		"description": "curly brackets"
+	},
+
 	"mm": {
 		"prefix": "mm",
 	 	"body": [
@@ -119,7 +159,7 @@
 	"at": {
 		"prefix": "at",
 	 	"body": [
-	 		"\\Big|_{{$1}}"
+	 		"\\Big|_{$1}"
 		],
 		"description": "derivative evaluated at"
 	},
@@ -304,6 +344,14 @@
 	 		"\\mathscr{F}"
 		],
 		"description": "1 body intermediate"
+	},
+
+	";PP": {
+		"prefix": ";PP",
+	 	"body": [
+	 		"\\mathscr{P}^{$1}$2"
+		],
+		"description": "Permutation operator"
 	},
 
 	";GG": {
@@ -673,22 +721,6 @@
 		"description": "definite integral"
 	},
 
-	"-eval": {
-		"prefix": "-eval",
-	 	"body": [
-	 		"\\bigg|_{$1}"
-		],
-		"description": "evaluate at"
-	},
-
-	"-evalh": {
-		"prefix": "-evalh",
-	 	"body": [
-	 		"\\bigg|_{$1}^{$2}"
-		],
-		"description": "evaluate from to"
-	},
-
 	"dot": {
 		"prefix": "dot",
 	 	"body": [
@@ -852,6 +884,14 @@
 		"prefix": "ge",
 	 	"body": [
 	 		"\\varepsilon"
+		],
+		"description": "var_epsilon"
+	},
+
+	"ge": {
+		"prefix": "gee",
+	 	"body": [
+	 		"\\epsilon"
 		],
 		"description": "epsilon"
 	},
@@ -1143,6 +1183,13 @@
 		],
 		"description": "superscript"
 	},
+	"upt": {
+		"prefix": "upt",
+	 	"body": [
+	 		"^{\\text{$1}}"
+		],
+		"description": "superscript"
+	},
 
 	"fk": {
 		"prefix": "fk",
@@ -1232,11 +1279,27 @@
 		"description": "wick label 4 "
 	},
 
+	"c5": {
+		"prefix": "wick-c5",
+		"body": [
+			"\\c5{$1}$2"
+		],
+		"description": "wick label 5 "
+	},
+
 	"vev":{
 		 "prefix": "vacuum expectation value",
 		 "body":[
 			 "\\langle 0|$1|0 \\rangle$2"
 		 ],
 		 "description": "vacuum expectation value"
+	},
+
+	";lra":{
+		 "prefix": ";lra",
+		 "body":[
+			 "\\left\\langle $1|$2|$3 \\right\\rangle$4"
+		 ],
+		 "description": "left and right angles"
 	},
 }
